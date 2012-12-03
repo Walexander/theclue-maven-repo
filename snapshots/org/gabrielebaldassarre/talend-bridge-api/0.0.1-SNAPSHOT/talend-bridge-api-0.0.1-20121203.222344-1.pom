@@ -32,5 +32,5 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<groupId>talend</groupId>
+	<groupId>org.gabrielebaldassarre</groupId>
 </project>
