@@ -1,11 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
+	<groupId>org.gabrielebaldassarre</groupId>
 	<artifactId>talend-bridge-api</artifactId>
 	<version>0.2</version>
 	<packaging>jar</packaging>
-
 	<name>talend-bridge-api</name>
 	<url>http://gabrielebaldassarre.com</url>
 
@@ -16,11 +15,11 @@
 	<distributionManagement>
 		<repository>
 			<id>repo</id>
-			<url>https://github.com/theclue/theclue-maven-repo/raw/master/releases</url>
+			<url>https://github.com/walexander/theclue-maven-repo/raw/master/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshot-repo</id>
-			<url>https://github.com/theclue/theclue-maven-repo/raw/master/snapshots</url>
+			<url>https://github.com/walexander/theclue-maven-repo/raw/master/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -37,5 +36,18 @@
     <version>13.0</version>
 </dependency>
 	</dependencies>
-	<groupId>org.gabrielebaldassarre</groupId>
+
+	<build>
+	<plugins>
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-compiler-plugin</artifactId>
+		<configuration>
+			<source>1.6</source>
+			<target>1.6</target>
+		</configuration>
+	</plugin>
+	</plugins>
+	</build>
+
 </project>
